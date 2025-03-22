@@ -1,0 +1,144 @@
+/*External CSS*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins,sans-serif;
+    text-decoration: none;
+}
+
+nav .togglebtn{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+nav .togglebtn span{
+    display: block;
+    background-color: #F96E2A;
+    margin: 5px 0px;
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+}
+nav .navlinks{
+list-style-type: none;
+}
+nav .navlinks li{
+    display: inline-block;
+}
+nav .navlinks li a{
+    color: #FBF8EF;
+    margin-right: 2.5rem;
+}
+nav .navlinks a:hover{
+    color: #F96E2A;
+}
+@media only screen and (max-width: 600px){
+    .hero-header{grid-area: 1 / span 6;}
+    .navlinks{grid-area: 1 / span 6;}
+    .wrapper{grid-area: 1 / span 6;}
+    .togglebtn{grid-area: 1 / span 6;}
+
+}
+/*Grid*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.container .hero-pic{
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 7px solid #C9E6F0;
+}
+.hero-pic img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+.hero-pic img:hover{
+    transform: scale(1.2);
+}
+.hero-text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.hero-text .sosmed i{
+    color: #C9E6F0;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.hero-text .sosmed i:hover{
+    color: #F96E2A;
+    transform: rotate(360deg);
+}
+/*Responsive*/
+@media(max-width:930px){
+    nav .togglebtn{
+        display: initial;
+    }
+    .togglebtn.click{
+        top: 45px;
+    }
+    .togglebtn.click span{
+        position: absolute;
+        margin-top: 12px;
+    }
+    .togglebtn.click span:first-child{
+        transform: rotate(-40deg);
+    }
+    .togglebtn.click span:nth-child(2){
+       opacity: 0;
+       margin: 0; 
+    }
+    .togglebtn.click span:last-child{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    nav .navlinks{
+        position: absolute;
+        top: 110px;
+        right: -100%;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: #78B3CE;
+        z-index: 3;
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+    nav .navlinks li{
+        display: block;
+    }
+    nav .navlinks li a{
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    nav .navlinks.open{
+        right: 0;
+    }
+    
+    
+}
+@media(max-width:768px){
+    .container{
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .hero-text{
+        padding: 40px 0px;
+    }
+}

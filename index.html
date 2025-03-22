@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css ">
+</head>
+<!--Internal CSS-->
+<style>
+    body{
+    overflow-x: hidden;
+    }
+    .hero-header{
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        background: #78B3CE;
+        }
+    .wrapper{
+        width: 1280px;
+        max-width: 95%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    /*Flex*/
+    header{
+        padding: 40px 0 30px;
+        display:  flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .logo .logo-text{
+        font-family: sans-serif;
+        font-size: 35px;
+        font-weight: 500;
+        color: #F96E2A;
+    }
+</style>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <div class="logo-text">PWD</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks" >
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portofolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="DSC_0150.JPG" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <!--Inline CSS-->
+                    <h5 style="color: #FBF8EF;font-size: 16px;margin-bottom: 5px;">Halo semuanya</h5>
+                    <h1 style="color: #F96E2A;font-size: 3rem;margin-bottom: 15px;">Muhammad Hanif Zidan</h1>
+                    <p style="color: #FBF8EF;margin-bottom: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Numquam odio dolores blanditiis laborum, placeat distinctio
+                        voluptatem doloribus magni hic nam exercitationem voluptatibus 
+                        quia quasi alias eum, repellendus neque autem vitae.
+                    </p>
+                    <div class="sosmed">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+    });
+
+    </script>
+</body>
+</html>
