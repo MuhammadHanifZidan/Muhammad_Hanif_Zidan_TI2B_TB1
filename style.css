@@ -45,7 +45,6 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    shadow;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     z-index: 10;
     position: relative;
@@ -150,7 +149,7 @@ nav .navlinks a:hover{
 }
 
 
-.wrapper .title p{
+.wrapper .title h1{
     color: #6EACDA;
     font-size: 70px;
     margin-bottom: 5px;
