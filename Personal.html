@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css ">
+</head>
+<body >
+    <div class="hero-header">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="index.html">MHZ</a>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="profil.html">Profil</a></li>
+                        <li><a href="Personal.html">Personal</a></li>
+                        <li><a href="keluarga.html">Keluarga</a></li>
+                        <li><a href="teman.html">Teman</a></li>
+                        <li><a href="hobi.html">Hobi</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <div class="wrapper">
+            <div style="grid-template-columns: 1fr;" class="container">
+                <div class="hero-pic-personal">
+                    <img src="img/DSC_0150.JPG" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Perkenalkan saya</h5>
+                    <h1>Muhammad Hanif Zidan</h1>
+                    
+                    <p>
+                        Saya adalah seorang mahasiswa dari Politeknik Negeri Jakarta (PNJ), jurusan Teknik Informatika, kelas TI 2B. 
+                        Saya memiliki kepribadian introvert, yang lebih nyaman bekerja secara mandiri dan suka menikmati waktu sendiri untuk fokus atau berpikir. 
+                        Tetapi, saya tetap mampu bekerja sama dalam tim dan menjalin komunikasi yang baik.
+                    </p>
+                    <p>
+                        Dalam keseharian, saya lebih senang melakukan aktivitas yang tenang dan produktif, seperti belajar mandiri atau mengerjakan proyek kecil. 
+                        Makanan favorit saya adalah nasi goreng, karena selain mudah dibuat, rasanya juga enak. 
+                        Minuman favorit saya adalah air putih dingin, yang selalu menyegarkan terutama saat siang hari yang sangat panas.
+                    </p>
+                    <p>
+                        Saya memiliki minat yang tinggi di bidang komputer, khususnya dalam pemrograman dan logika. 
+                        Saya merasa tertantang ketika diberi tugas pemrograman dan logika, dan hal itu membuat saya semakin bersemangat untuk terus belajar dan meningkatkan kemampuan saya di bidang ini. 
+                        Kedepannya, saya berharap dapat berkontribusi dalam pengembangan teknologi yang bermanfaat bagi banyak orang.
+                    </p>
+                    <p>
+                        Cita-cita saya menjadi seorang software developer di perusahaan teknologi besar seperti Google. 
+                        Saya ingin menciptakan teknologi digital yang inovatif dan bermanfaat bagi banyak masyarakat.
+                        Untuk itu, saya terus berusaha untuk mengasah kemampuan dan memperluas wawasan saya setiap harinya.
+                    </p>
+                    <div class="sosmed">
+                        <a href="https://www.instagram.com/nip_hanipp/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/18KfvwZ4x8/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://steamcommunity.com/profiles/76561198860476019/" target="_blank"><i class="fa-brands fa-steam"></i></a>
+                        <a href="https://github.com/MuhammadHanifZidan" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>   
+  
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+    });
+
+    </script>
+</body>
+</html>

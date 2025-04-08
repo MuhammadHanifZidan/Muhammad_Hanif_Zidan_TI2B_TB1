@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css ">
+</head>
+<body>
+    <div class="hero-header">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="index.html">MHZ</a>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="profil.html">Profil</a></li>
+                        <li><a href="Personal.html">Personal</a></li>
+                        <li><a href="keluarga.html">Keluarga</a></li>
+                        <li><a href="teman.html">Teman</a></li>
+                        <li><a href="hobi.html">Hobi</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <div class="wrapper">
+            <div class="title">
+            <p>Keluarga</p>
+            </div>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="img/ayah.JPG" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h1>Ayah</h1>
+                    <p>
+                        Ini adalah ayah saya. Ayah saya dulu bekerja sebagai pegawai swasta, 
+                        tetapi sekarang sudah pensiun. Ayah saya adalah orang yang tegas dalam mendidik anak-anaknya.
+                    </p>
+                </div>
+                <div class="hero-pic">
+                    <img src="img/ibu.JPG" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h1>Ibu</h1>
+                    <p>
+                        Ini adalah Ibu saya. Ibu saya bekerja sebagai pegawai negeri. 
+                        Ibu saya adalah orang yang sangat baik kepada anak-anaknya.
+                    </p>
+                </div>
+                <div class="hero-pic">
+                    <img src="img/kk_pertama.JPG" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h1>Kakak pertama</h1>
+                    <p>
+                        Ini adalah kakak saya yang paling tua. Kakak saya sekarang bekerja di intan pariwara. 
+                        Kakak saya adalah orang yang pintar dan sangat senang membantu saya belajar.
+                    </p>
+                </div>
+                <div class="hero-pic">
+                    <img src="img/kk_ipar.JPG" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h1>Kakak ipar</h1>
+                    <p>
+                        Ini adalah kakak ipar saya, istri dari kakak pertama. 
+                        Walaupun baru kenal, tetapi beliau sangat baik kepada saya dan sudah saya anggap seperti keluarga sendiri.
+                    </p>
+                </div>
+                <div class="hero-pic">
+                    <img src="img/kk_kedua.JPG" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h1>Kakak kedua</h1>
+                    <p>
+                        Ini adalah kakak kedua saya. Saat masih kecil saya sering kali bertengkar dengan kakak saya, 
+                        tetapi saat ini sudah tidak lagi dan kakak saya sangat baik kepada saya.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>   
+  
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+    });
+
+    </script>
+</body>
+</html>
